@@ -18,6 +18,11 @@ class DataTransformation:
         self.data_transformation_config=DataTransformationConfig()
 
     def get_data_transfromer_object(self):
+        '''
+
+        This fuction is responsible for data transformation
+
+        '''
         try:
             numerical_columns =["writing_score", "reading_score"]
             categorical_columns=["gender", "race_ethnicity", "parental_level_of_education", "luch", "test_preparation_course"]
@@ -48,6 +53,8 @@ class DataTransformation:
         except Exception as e:
             raise CustomException(e, sys)
 
-
-
-
+    def initiate_data_transformation(self, train_path, trst_path):
+        try:
+            pass
+        except:
+            pass
